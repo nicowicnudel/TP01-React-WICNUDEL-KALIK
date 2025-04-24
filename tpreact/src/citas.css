@@ -1,0 +1,16 @@
+.cita {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: #f9f9f9;
+  }
+  
+  .eliminar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 0.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+  }  
