@@ -7,7 +7,7 @@ function Formulario() {
       <h2>Crear Cita</h2>
       <form>
         <InputText placeHolder="nombre de la mascota" nombre="nombre"></InputText>
-        <input type="text" placeholder="Nombre Dueño" />
+        <InputText placeHolder="Nopmbre Dueño" nombre="nombre"></InputText>
         <input type="date" />
         <input type="time" />
         <textarea placeholder="Síntomas"></textarea>
