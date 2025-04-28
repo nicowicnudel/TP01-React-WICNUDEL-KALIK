@@ -6,3 +6,5 @@ const InputText = (prop) => {
     )
 
 }
+
+export default InputText
