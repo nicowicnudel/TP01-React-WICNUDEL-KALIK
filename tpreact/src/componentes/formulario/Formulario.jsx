@@ -1,11 +1,12 @@
-import "./Formulario.css";
+import React from "react";
+import InputText from "./components/inputText/InputText.jsx"
 
 function Formulario() {
   return (
     <div className="formulario">
       <h2>Crear Cita</h2>
       <form>
-        <input type="text" placeholder="Nombre Mascota" />
+        <InputText placeHolder="nombre de la mascota" nombre="nombre"></InputText>
         <input type="text" placeholder="Nombre Dueño" />
         <input type="date" />
         <input type="time" />
