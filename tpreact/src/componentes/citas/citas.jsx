@@ -1,4 +1,4 @@
-import "./Cita.css";
+import "./citas.css";
 
 function Cita({ cita }) {
   return (

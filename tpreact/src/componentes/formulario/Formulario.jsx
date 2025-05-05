@@ -1,5 +1,5 @@
 import React from "react";
-import InputText from "./componentes/inputText/InputText.jsx"
+import InputText from "../inputText/InputText.jsx";
 
 function Formulario() {
   return (

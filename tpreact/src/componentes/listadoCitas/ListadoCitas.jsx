@@ -1,4 +1,4 @@
-import Cita from "./citas/citas.jsx";
+import Cita from "../citas/citas.jsx";
 
 
 function ListadoCitas({ citas }) {

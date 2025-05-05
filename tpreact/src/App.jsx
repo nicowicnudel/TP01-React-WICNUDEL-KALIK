@@ -1,17 +1,12 @@
-import { useState } from "react";
+import React from "react";
 import Formulario from "./componentes/formulario/Formulario.jsx";
-import ListadoCitas from "./componentes/listadoCitas/ListadoCitas.jsx";
-
-import "./App.css";
-
-import React from 'react';
-
-
+import NavBar     from "./componentes/navBar.jsx";
+import MainContent from "./componentes/main0.jsx";
 
 function App() {
   return (
     <>
-      <Formulario></Formulario>
+      <Formulario />
       <NavBar />
       <MainContent />
     </>
