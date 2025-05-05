@@ -1,8 +1,8 @@
 import React from "react";
 import Formulario from "./componentes/formulario/Formulario.jsx";
 import { useState } from 'react'
-import './App.css'
-import ListadoCitas from "./components/listadoCitas/ListadoCitas.jsx";
+import "./App.css";
+import ListadoCitas from "./componentes/listadoCitas/ListadoCitas.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
