@@ -3,12 +3,12 @@
     border-radius: 8px;
     padding: 1rem;
     margin-bottom: 1rem;
-    background-color: #f9f9f9;
+    background-color: #611e1e;
   }
   
   .eliminar {
     background-color: red;
-    color: white;
+    color: rgb(201, 25, 177);
     border: none;
     padding: 0.5rem;
     margin-top: 1rem;

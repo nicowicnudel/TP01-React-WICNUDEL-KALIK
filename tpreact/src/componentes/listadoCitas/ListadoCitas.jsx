@@ -1,14 +1,18 @@
-import Cita from "../citas/citas.jsx";
+import React from "react";
+import "../listadoCitas/ListadoCitas.css";
+import Boton from "../boton/boton.jsx";
 
-
-function ListadoCitas({ citas }) {
-  return (
-    <div className="listado">
-      <Cita mascota="tina" dueño = "chechu" fecha = "2021-05-08" hora = "07:45" sintomas = "le duele la pata"></Cita> 
-      <Cita mascota="cacho" dueño = "nico" fecha = "2020-04-03" hora = "11:11" sintomas = "le duele la panza"></Cita>  
-      <Cita mascota="ciro" dueño = "tomi" fecha = "2025-02-01" hora = "20:20" sintomas = "le pica el pie izquierdo"></Cita>   
-    </div>
-  );
+const ListadoCitas = (props) => {
+  return(
+      <div className="cita">
+          <p>Mascota: <span>{props.nombre}</span></p>
+          <p>Dueño: <span>{props.dueño}</span></p>
+          <p>Fecha: <span>{props.fecha}</span></p>
+          <p>Hora: <span>{props.hora}</span></p>
+          <p>Sintomas: <span>{props.sintomas}</span></p>
+          <Boton></Boton>
+      </div>
+  )
 }
 
 export default ListadoCitas;
