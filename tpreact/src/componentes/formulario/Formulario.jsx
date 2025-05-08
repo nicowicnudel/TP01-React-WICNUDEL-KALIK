@@ -4,7 +4,7 @@ import "./Formulario.css";
 
 const Formulario = () => {
   return(
-      <div className="one-half column">
+      <div className="contenedor-formulario">
           <form>
               <div>
                   <label>Nombre Mascota</label>
