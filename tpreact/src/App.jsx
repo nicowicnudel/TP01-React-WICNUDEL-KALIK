@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Formulario from "./componentes/formulario/Formulario.jsx";
-import "./App.css";
 import Cita from "./componentes/citas/citas.jsx";
+import "./App.css";
 
 function App() {
   const [citas, setCitas] = useState([]);
@@ -10,8 +10,8 @@ function App() {
     setCitas([...citas, cita]);
   };
 
-  const eliminarCita = (index) => {
-    const nuevasCitas = citas.filter((_, i) => i !== index);
+  const eliminarCita = (id) => {
+    const nuevasCitas = citas.filter(cita => cita.id !== id);
     setCitas(nuevasCitas);
   };
 
@@ -20,13 +20,13 @@ function App() {
       <h1>Administrador de pacientes</h1>
       <div className='row'>
         <div className='one-half column'>
-          <h1>Crear cita</h1>
+          <h2>Crear cita</h2>
           <Formulario agregarCita={agregarCita} />
         </div>
         <div className='one-half column'>
-          <h1>Administra tus citas</h1>
-          {citas.map((cita, index) => (
-            <Cita key={index} cita={cita} eliminarCita={() => eliminarCita(index)} />
+          <h2>Administra tus citas</h2>
+          {citas.map((cita) => (
+            <Cita key={cita.id} cita={cita} onEliminar={eliminarCita} />
           ))}
         </div>
       </div>
