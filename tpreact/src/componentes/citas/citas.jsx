@@ -1,6 +1,7 @@
+import React from "react";
 import "./citas.css";
 
-function Cita({ cita }) {
+function Cita({ cita, eliminarCita }) {
   return (
     <div className="cita">
       <p><strong>Mascota:</strong> {cita.mascota}</p>
@@ -8,9 +9,8 @@ function Cita({ cita }) {
       <p><strong>Fecha:</strong> {cita.fecha}</p>
       <p><strong>Hora:</strong> {cita.hora}</p>
       <p><strong>Síntomas:</strong> {cita.sintomas}</p>
-      <button className="eliminar">Eliminar</button>
+      <button className="eliminar" onClick={eliminarCita}>Eliminar</button>
     </div>
   );
 }
-
 export default Cita;
